@@ -34,5 +34,9 @@ public class Book{
     public void setISBN(String ISBN){
 	this.ISBN = ISBN;
     }
-    
+
+    //toString method
+    public String toString(){
+	return "Author: " + author + "\nTitle: " + title + "\nISBN: " + ISBN;
+    }
 }
