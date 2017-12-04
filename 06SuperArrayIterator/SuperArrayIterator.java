@@ -1,10 +1,10 @@
 import java.util.Iterator;
 
-public class SuperArray implements Iterable<String>{
+public class SuperArrayIterator implements Iterable<String>{
   private String[] data;
   private int size;
 
-  public SuperArray(){
+  public SuperArrayIterator(){
     data = new String[10];
     size = 0;
   }
@@ -17,9 +17,9 @@ public class SuperArray implements Iterable<String>{
   //Defines superArrayIterator class
   private class superArrayIterator implements Iterator<String>{
     int current;
-    SuperArray array;
+    SuperArrayIterator array;
 
-    public superArrayIterator(SuperArray inputArray){
+    public superArrayIterator(SuperArrayIterator inputArray){
       array = inputArray;
     }
     
