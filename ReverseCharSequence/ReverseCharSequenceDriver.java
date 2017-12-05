@@ -1,14 +1,11 @@
 public class ReverseCharSequenceDriver{
   
-  public static void main(String[] args){
-    ReverseCharSequence test = new ReverseCharSequence("ABCD");
-    System.out.println(test);
-    System.out.println(test.charAt(0));
-    // System.out.println(test.charAt(-1));
-    //System.out.println(test.charAt(4));
-    System.out.println(test.length());
-    System.out.println(test.subSequence(0,3));
-    
+  public static void main(String[] args){   
+    ReversedCharSequence a = new ReversedCharSequence("hello");
+    System.out.println(a);
+    System.out.println(a.length());
+    System.out.println(a.charAt(3));
+    System.out.println(a.subSequence(0,3));
   }
   
 }
