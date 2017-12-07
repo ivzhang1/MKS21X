@@ -62,8 +62,7 @@ public class Sorts{
       }
       temp = data[n];
       for (int k = n; k < i; k++){
-
-        temp2 = data[k+1] + 0;
+	temp2 = data[k+1];
         data[k+1] = temp;
         temp = temp2;
       }
