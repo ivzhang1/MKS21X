@@ -10,27 +10,34 @@ public class SortsDriver{
     //int[] randish = new int[3];
     //int[] randish = new int[100000];
 
-    for(int i = 0 ; i < randish.length; i++){ //PURELY RANDOM
-      randish[i] = (int)(Math.random()*100);
+    if (artie.length == 0 || artie.length > 1){
+      System.out.println("Making default random array!");
+      System.out.println("Enter:\n" +
+                         "0 for an array with the same numbers\n"+
+                         "1 for an array: big to small #s\n" +
+                         "2 for an array: small to big #s\n"
+                         );
+      for(int i = 0 ; i < randish.length; i++){ //PURELY RANDOM
+        randish[i] = (int)(Math.random()*100);
+      }
+    } else if (artie[0].equals("0")){
+      for(int i = 0 ; i < randish.length; i++){ //ALL THE SAME NUMBER OR YOU CAN JUST RUN MAIN WITHOUT ANY FOR LOOPS
+        randish[i] = 1;
+      }
+    } else if (artie[0].equals("1")){
+      for(int i = 0 ; i < randish.length; i++){ //BIGGEST TO SMALLEST
+        randish[i] = randish.length - i;
+      }
+    } else if (artie[0].equals("2")){
+      for(int i = 0 ; i < randish.length; i++){ //SMALLEST TO BIGGEST
+        randish[i] = i;
+      }
     }
-
-    /*
-    for(int i = 0 ; i < randish.length; i++){ //ALL THE SAME NUMBER OR YOU CAN JUST RUN MAIN WITHOUT ANY FOR LOOPS
-      randish[i] = 1;
+    else{
+      for(int i = 0 ; i < randish.length; i++){ //PURELY RANDOM
+        randish[i] = (int)(Math.random()*100);
+      }
     }
-    */
-
-    /*
-    for(int i = 0 ; i < randish.length; i++){ //BIGGEST TO SMALLEST
-      randish[i] = randish.length - i;
-    }
-    */
-
-    /*
-    for(int i = 0 ; i < randish.length; i++){ //SMALLEST TO BIGGEST
-      randish[i] = i;
-    }
-    */
 
     System.out.println(Arrays.toString(randish));
 
