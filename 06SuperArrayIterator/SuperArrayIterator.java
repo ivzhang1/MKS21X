@@ -24,7 +24,13 @@ public class SuperArrayIterator implements Iterable<String>{
     }
     
     public String next(){
-      return array.get(current++);
+      if (hasNext()){
+        return array.get(current++);
+      }
+      else{
+        System.exit(1);
+      }
+      return array.get(current);
     }
     
     public boolean hasNext(){
