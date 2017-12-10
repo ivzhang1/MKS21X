@@ -14,17 +14,23 @@ public class SortsDriver{
       randish[i] = (int)(Math.random()*100);
     }
 
-    //for(int i = 0 ; i < randish.length; i++){ //ALL THE SAME NUMBER OR YOU CAN JUST RUN MAIN WITHOUT ANY FOR LOOPS
-    //  randish[i] = 1;
-    //}
+    /*
+    for(int i = 0 ; i < randish.length; i++){ //ALL THE SAME NUMBER OR YOU CAN JUST RUN MAIN WITHOUT ANY FOR LOOPS
+      randish[i] = 1;
+    }
+    */
 
-    //for(int i = 0 ; i < randish.length; i++){ //BIGGEST TO SMALLEST
-    //  randish[i] = randish.length - i;
-    //}
+    /*
+    for(int i = 0 ; i < randish.length; i++){ //BIGGEST TO SMALLEST
+      randish[i] = randish.length - i;
+    }
+    */
 
-    //for(int i = 0 ; i < randish.length; i++){ //SMALLEST TO BIGGEST
-    //  randish[i] = i;
-    //}
+    /*
+    for(int i = 0 ; i < randish.length; i++){ //SMALLEST TO BIGGEST
+      randish[i] = i;
+    }
+    */
 
     System.out.println(Arrays.toString(randish));
 
