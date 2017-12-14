@@ -45,7 +45,8 @@ public class TemperatureWindow extends JFrame implements ActionListener{
     double value = 0;
     String returnedValue = "";
     try {
-      value = (double)(Integer.parseInt(text));
+      value = Double.parseDouble(text);
+
     } catch (NumberFormatException e){
       returnedValue = "Enter a correct number!";
     }
@@ -58,7 +59,7 @@ public class TemperatureWindow extends JFrame implements ActionListener{
           returnedValue += "" + CtoF(value) + "F ";
         }
         if (celsius.isSelected()){
-          returnedValue += "" + FtoC(value) + "C";
+          returnedValue += "" + FtoC(value);
         }
       }
     }
