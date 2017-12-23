@@ -8,18 +8,7 @@ public class Sorts{
    *Upon completion, the elements of the array will be in increasing order.
    *@param data  the elements to be sorted.
    */
-  public static void selectionSort(int[] data){
-      int temp = 0;
-      for (int i = 0; i < data.length; i++){
-	  for (int inside = i; inside < data.length; inside++){
-	      if (data[i] > data[inside]){
-		  temp = data[i];
-		  data[i] = data[inside];
-		  data[inside] = temp;
-	      }
-	  }
-      }
-  }
+
 
   public static void insertionSort(int[] data){
     int place = 0;

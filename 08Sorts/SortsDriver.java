@@ -43,14 +43,14 @@ public class SortsDriver{
 
     //Sorts Tests Here:
 
-    //System.out.println("selectionSort:");
-    //Sorts.selectionSort(randish);
+    System.out.println("selectionSort:");
+    Sorts.selectionSort(randish);
 
     //System.out.println("insertionSort:");
     //Sorts.insertionSort(randish);
 
-    System.out.println("bubbleSort:");
-    Sorts.bubbleSort(randish);
+    //System.out.println("bubbleSort:");
+    //Sorts.bubbleSort(randish);
 
     System.out.println(Arrays.toString(randish));
 
