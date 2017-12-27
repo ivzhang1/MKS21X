@@ -1,0 +1,7 @@
+Bed
+Dead
+Cat
+Fish
+Dog
+Horse
+Nose
