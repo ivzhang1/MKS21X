@@ -6,6 +6,10 @@ public class SuperArray{
       data = new String[10];
       size = 0;
     }
+    public SuperArray(int startingCapacity){
+      data = new String[10];
+      size = startingCapacity;
+    }
   
     public String[] getData(){
       return data;
