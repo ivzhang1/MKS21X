@@ -6,6 +6,11 @@ public class SuperArray{
 	data = new String[10];
 	size = 0;
     }
+
+    public SuperArray(int startCap){
+	data = new String[startCap];
+	size = 0;
+    }
   
     public String[] getData(){
 	return data;

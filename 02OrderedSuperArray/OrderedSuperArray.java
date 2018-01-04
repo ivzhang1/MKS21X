@@ -43,6 +43,11 @@ public class OrderedSuperArray extends SuperArray{
 	return  true;
     }
 
+    public String set(int index, String element){
+	throw new UnsupportedOperationException();
+    }
+	
+
     private int indexOfBinary (String str){
 	int start = 0;
 	int end = size();
