@@ -1,6 +1,6 @@
 public class SuperArrayIterableDriver{
   public static void main(String[] args) {
-    SuperArrayIterator data = new SuperArrayIterator();
+    SuperArray data = new SuperArray();
     int i = 0;
     while(i < 26){
       data.add(""+(char)('A'+i%26));
