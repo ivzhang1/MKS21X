@@ -119,7 +119,7 @@ public class Barcode implements Comparable<Barcode>{
    */
   public static String toZip(String code){
     //Checks the length of the code
-    if(code.length() != 32 || (code.charAt(0) != '|' && code.charAt(code.length()-1) != '|' )){
+    if(code.length() != 32 || (code.charAt(0) != '|' || code.charAt(code.length()-1) != '|')){
       throw new IllegalArgumentException();
     }
     int sum = 0;
